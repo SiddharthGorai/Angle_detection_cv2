@@ -29,8 +29,8 @@ def draw_circle(event, x, y, flags, param):
     cv2.imshow('image',img)
         
 
-img = cv2.imread("protractor.png")
-img = cv2.resize(img,(0,0),fx=0.5,fy=0.5)
+img = cv2.imread("image1.jpg")
+img = cv2.resize(img,(0,0),fx=0.15,fy=0.15)
 cv2.imshow('image',img)
 cv2.setMouseCallback('image', draw_circle)
 cv2.waitKey(0)
